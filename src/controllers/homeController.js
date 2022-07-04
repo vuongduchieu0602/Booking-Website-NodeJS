@@ -35,7 +35,7 @@ let displayCRUD = async(req, res) => {
 let postCRUD = async(req, res) => {
     let message = await CRUDService.createNewUser(req.body);
     console.log(message);
-    return res.send("POST CRUD");
+    return res.redirect('/get-crud');
 }
 
 let getEditCRUD = async(req, res) => {
